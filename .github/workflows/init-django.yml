@@ -21,7 +21,7 @@ jobs:
           mkdir example
           cd example
           virtualenv venv
-          call venv\Scripts\activate
+          start venv\Scripts\activate
           pip install django
           django-admin startproject example
           cd ..
