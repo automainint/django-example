@@ -17,11 +17,10 @@ jobs:
 
       - name: Create Django project
         run: |
-          pip install virtualenv
           mkdir example
           cd example
-          virtualenv venv
-          start venv\Scripts\activate
+          python -m venv env
+          start env\Scripts\activate
           pip install django
           django-admin startproject example
           cd ..
